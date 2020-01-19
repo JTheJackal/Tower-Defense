@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finance-4-Group-Dashboard-Mock-up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet-1.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    
+    <!-- Nav Bar -->
+    
+    <div class="row no-gutters menu-bar light-green">
+        <div class="col-md-2 logo">
+            <img class="logo-img" src="Images/Finance%204%20Group%20Logo%20White.png">
+        </div>
+        
+        <div class="hidden-xs col-md-8 col-lg-8">
+            <nav class="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="nav-link" href="#">Calculator</a></li>
+                    <li><a class="nav-link" href="#">New Application</a></li>
+                    <li><a class="nav-link" href="#">Orders Dashboard</a></li>
+                    <li><a class="nav-link" href="#">Treatments</a></li>
+                    <li><a class="nav-link" href="#">Reports</a></li>
+                    <li><a class="nav-link" href="#">Useful Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="hidden-xs hidden-sm hidden-md hidden-lg col-xl-2"></div>
+        
+        <div class="hidden-xs col-md-2 account">
+            <img class="profile-picture left hidden-xs visible-lg" src="Images/Cancel_Application_Button.png">
+            <div class="dropdown left">
+                <button class="menu-item account-btn light-green dropdown-toggle" type="button" data-toggle="dropdown">My Account <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">View Account</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Dashboard row -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">Advert</div>
+            <div class="col-md-6 halign-center"><h1 class="">DASHBOARD</h1></div>
+            <div class="col-md-3">Advert</div>
+        </div>
+    </div>
+    
+    <!-- Filter Container -->
+    <div class="container-fluid">
+
+        <!-- Filters Row -->
+        <div class="row">
+        <!-- Filters column -->
+        <div class="col-md-8">
+            <div class="row filter-header">
+                <div class="xs-col-12">Filter by date</div>
+            </div>
+            <div class="row filter-body">
+                
+                <!--
+                <div class="col-md-3 d-inline"><label for="fromTXT">From:</label> <input id="fromTXT" type="text"></div>
+                <div class="col-md-3 d-inline"><label for="toTXT">To:</label> <input id="toTXT" type="text"></div>
+                <div class="col-md-3"><label>Or:</label> <select id="selectMonth">
+                                            <option>This Month</option>
+                                            <option>Another Month</option>
+                                            </select>
+                </div>
+                <div class="col-md-3"><button class="">Export Results As CSV</button></div>
+                -->
+                
+                <div class="col-xs-10">
+                    <label for="fromTXT">From:</label> <input id="fromTXT" type="text">
+                    <label for="toTXT">To:</label> <input id="toTXT" type="text">
+                    <label>Or:</label> <select id="selectMonth">
+                                            <option>This Month</option>
+                                            <option>Another Month</option>
+                                            </select>
+                </div>
+                <div class="col-xs-2">
+                    <button class="">Export Results As CSV</button>
+                </div>
+            </div>
+
+            <div class="row filter-header">
+                <div class="col-xs-12">Filter by Status</div>
+            </div>
+            <div class="row filter-body">
+                <div class="col-md-2"><input type="checkbox" id="issued"> <label for="issued">Issued</label></div>
+                <div class="col-md-2"><input type="checkbox" id="authorised"> <label for="authorised">Authorised</label></div>
+                <div class="col-md-2"><input type="checkbox" id="cancelled"> <label for="cancelled">Cancelled</label></div>
+                <div class="col-md-2"><input type="checkbox" id="uncaptured"> <label for="uncaptured">Uncaptured</label></div>
+                <div class="col-md-2"><input type="checkbox" id="partCaptured"> <label for="partCaptured">Part Captured</label></div>
+                <div class="col-md-2"><button class="filterBTN right" id="selectall">Select All</button></div>
+            </div>
+            
+            <div class="row filter-body-2">
+                <div class="col-md-2"><input type="checkbox" id="pending"> <label for="pending">Pending</label></div>
+                <div class="col-md-2"><input type="checkbox" id="failed"> <label for="failed">Failed</label></div>
+                <div class="col-md-2"><input type="checkbox" id="expired"> <label for="expired">Expired</label></div>
+                <div class="col-md-2"><input type="checkbox" id="captured"> <label for="captured">Captured</label></div>
+                <div class="col-md-2"><input type="checkbox" id="paid"> <label for="paid">Paid</label></div>
+                <div class="col-md-2"><button class="filterBTN right" id="clearAll">Clear All</button></div>
+            </div>
+        </div>
+        
+        <!-- Loans column -->
+        <div class="col-md-3">
+        
+            <p class="loan-output" id="loanThisMonth">Lending This Month: £924,584</p>
+            <p class="loan-output" id="loanLastMonth">Lending Last Month: £837,584</p>
+            <p class="loan-output" id="loanThisYear">Lending This Year: £10,124,584</p>
+        </div>
+        
+        <!-- Report/Application buttons -->
+        <div class="col-md-1">
+            <button class="reportBTN" id="viewReportBTN">View Reports</button>
+            <button class="reportBTN" id="createApplicationBTN">Create A New Application</button>
+        </div>
+        
+        
+    </div>
+    </div>
+</div>
+
+</body>
+</html> 

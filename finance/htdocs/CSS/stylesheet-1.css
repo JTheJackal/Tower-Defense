@@ -1,0 +1,297 @@
+html, body {
+    
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    
+    font-weight: normal;
+}
+
+input {
+    
+    border-radius: 5px;
+}
+
+li, a {
+    
+    color: white;
+}
+
+.navbar {
+    
+    min-height: 112px !important;
+}
+
+.grey {
+    
+    background-color: #F9F9F9;
+}
+
+.icon-bar {
+    
+    background-color: white;
+}
+
+.white-content {
+    
+    color: white;
+}
+
+.light-green {
+    
+    background-color: #1A9D8F;
+}
+
+.currency {
+    
+    color: lightgray;
+}
+
+.menu-bar {
+    
+    height: 60px;
+}
+
+.entry {
+    
+    min-height: 100px !important;
+}
+
+.data {
+    
+    font-size: 1.4em;
+}
+
+.menu-item {
+    
+    color: white;
+    padding-top: 20px;
+}
+
+.vertical-align {
+    
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    
+    padding: 0 0 0 15%;
+    margin-right: 15%;
+    max-height: 80px;
+}
+
+.footer {
+    
+    position: static;
+    height: 80px;
+    bottom: 0;
+    margin: 0 -15px;
+    padding-top: 30px;
+}
+
+a {
+    
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+.uncaptured {
+    
+    background-color: red;
+    color: white;
+}
+
+.large-text {
+    
+    font-size: 1.3em;
+}
+
+.logo-img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.stretch-height {
+    
+    min-height: 100%;
+}
+
+.profile-picture {
+    
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.left {
+    
+    float: left;
+}
+
+.right {
+    
+    float: right;
+}
+
+.inline {
+    
+    display: inline;
+}
+
+.halign-center {
+    
+    text-align: center;
+}
+
+.account-btn {
+    
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.navbar, .nav-link {
+    
+    margin-bottom: 0;
+    min-height: 60px;
+    border: 0;
+    color: white;
+}
+
+.navbar-nav>li>a {
+    
+    padding-top: 0;
+}
+
+.nav>li>a {
+    
+    padding-top: 50px;
+}
+
+.navbar-nav {
+    
+    min-height: 112px;
+    padding-left: 3%;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    
+    background-color: #19A999;
+    color: white;
+    min-height: 112px;
+}
+
+.active {
+    
+    
+}
+
+.filter-header {
+    
+    background-color: #21BEAD;
+    color: white;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.filter-body {
+    
+    padding: 10px 20px 0 10px;
+    background-color: #1E9A8F;
+}
+
+.filter-body-2 {
+    
+    padding: 0 20px 10px 10px;
+    background-color: #1E9A8F;
+}
+
+.filterBTN {
+    
+    width: 60%;
+    height: 60%;
+}
+
+.loan-output {
+    
+    background-color: #409D90;
+    color: white;
+    padding: 10px;
+}
+
+.reportBTN {
+    
+    width: 100%;
+    height: 80px;
+}
+
+.row.no-gutters {
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.csvBTN {
+    
+    background-color: #4A454A;
+    color: white;
+    height: 70px;
+    width: 11% !important;
+    border: 2px solid white;
+}
+
+#selectMonth {
+    
+    border-radius: 5px;
+}
+
+#desktopNavbar {
+    
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
